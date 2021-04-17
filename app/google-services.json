@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "144160314792",
+    "firebase_url": "https://powerfmapp.firebaseio.com",
+    "project_id": "powerfmapp",
+    "storage_bucket": "powerfmapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144160314792:android:2dc350ef2d115d2abf799d",
+        "android_client_info": {
+          "package_name": "com.melborp.suwilanji.powerfm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144160314792-e8ki47e63go877oh171jbbtm9slaa7qq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.melborp.suwilanji.powerfm",
+            "certificate_hash": "5b1a474ddd18b7e0f196bf8ca35372ec3c31481e"
+          }
+        },
+        {
+          "client_id": "144160314792-694f8o6sjb8l7ho5jjc9oe3fnjoltfhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDIXu-vag07yxGI9sVAb_PCYH892EXI_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144160314792-694f8o6sjb8l7ho5jjc9oe3fnjoltfhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

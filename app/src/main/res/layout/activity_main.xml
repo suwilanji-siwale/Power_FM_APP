@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.melborp.suwilanji.powerfm.MainActivity">
+
+    <VideoView
+        android:id="@+id/bgVideoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="567dp"
+        android:id="@+id/v_guideline1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="58dp"
+        app:layout_constraintGuide_percent="0.15104167"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="567dp"
+        android:id="@+id/v_guideline2"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="329dp"
+        app:layout_constraintGuide_percent="0.8567708"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="567dp"
+        android:id="@+id/v_guideline3"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="118dp"
+        app:layout_constraintGuide_percent="0.30729166"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/h_guideline1"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="326dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintGuide_percent="0.5749559"/>
+
+    <!--<Button
+        android:text="wechat login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wechatLoginButton"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintTop_toTopOf="@+id/h_guideline1"
+        android:drawableLeft="@drawable/wechat_icon"
+        android:background="@drawable/wechat_button_bg"/>
+
+    <Button
+        android:text="Facebook Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fbLoginButton"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wechatLoginButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        android:drawableLeft="@drawable/fb_logo"
+        android:background="@drawable/fb_button_bg"/>
+
+    <Button
+        android:text="Other Accounts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/otherAccButton"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        android:background="@drawable/other_acc_button_bg"
+        app:layout_constraintTop_toBottomOf="@+id/orImageView"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/or"
+        android:id="@+id/orImageView"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/fbLoginButton"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/otherAccButton"
+        app:buttonTint="#80ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline3"/>
+
+    <TextView
+        android:text="I agree to the Terms of Service."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstTermTextView"
+        android:textSize="10sp"
+        android:textColor="#80ffffff"
+        app:layout_constraintLeft_toRightOf="@+id/termCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/otherAccButton"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:text="JOOX User Terms and Privacy Policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secTermTextView"
+        android:textColor="#80ffffff"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/termCheckBox"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline3"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toLeftOf="@+id/v_guideline3"
+        android:layout_marginLeft="4dp"/>
+
+        pp:icvp_center_page_scale_offset="30dp"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_medium_scaled="true"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_scroll_duration="250"
+
+
+        <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white">
+
+    <ImageView
+        android:id="@+id/dish_image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:adjustViewBounds="true" />
+
+</android.support.v7.widget.CardView>
+
+
+compile 'com.android.support:cardview-v7:23.0.1'
+
+
+-->
+
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/horizontal_cycle"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_max_page_scale="0.5"
+        app:icvp_medium_scaled="true"
+        app:icvp_min_page_scale="0.30"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_scroll_duration="250"
+        app:layout_constraintBottom_toTopOf="@+id/secTermTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/bgVideoView"
+        app:layout_constraintTop_toTopOf="@+id/bgVideoView"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/secTermTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:text="POWER FM - Swipe to change to stations"
+        android:textColor="#80ffffff"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgVideoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.melborp.suwilanji.powerfm.MainActivity">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bgVideoView"
+            />
+
+        &lt;!&ndash;<com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+            android:id="@+id/horizontal_cycle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+            app:icvp_scroll_duration="250"
+            app:icvp_center_page_scale_offset="30dp"
+            app:icvp_min_page_scale_offset="5dp"
+            app:icvp_max_page_scale="0.8"
+            app:icvp_min_page_scale="0.55"
+            app:icvp_medium_scaled="false"&ndash;&gt;
+            />
+
+    </RelativeLayout>
+    -->
